@@ -1,0 +1,112 @@
+{
+  "overall_summary": {
+    "total_datasets": 15,
+    "total_rows": 574706,
+    "total_cells": 6582920,
+    "total_missing_cells": "13060",
+    "missing_percentage": 0.1983922028522297
+  },
+  "dataset_quality": {
+    "customers": {
+      "completeness_score": 100.0,
+      "duplicate_rows": "0",
+      "missing_cells": "0",
+      "issues": []
+    },
+    "delivery_events": {
+      "completeness_score": 100.0,
+      "duplicate_rows": "0",
+      "missing_cells": "0",
+      "issues": []
+    },
+    "Delivery_Logistics": {
+      "completeness_score": 100.0,
+      "duplicate_rows": "0",
+      "missing_cells": "0",
+      "issues": []
+    },
+    "drivers": {
+      "completeness_score": 93.11111111111111,
+      "duplicate_rows": "0",
+      "missing_cells": "124",
+      "issues": [
+        "Found 124 missing values"
+      ]
+    },
+    "driver_monthly_metrics": {
+      "completeness_score": 100.0,
+      "duplicate_rows": "0",
+      "missing_cells": "0",
+      "issues": []
+    },
+    "facilities": {
+      "completeness_score": 100.0,
+      "duplicate_rows": "0",
+      "missing_cells": "0",
+      "issues": []
+    },
+    "fuel_purchases": {
+      "completeness_score": 99.63588604917852,
+      "duplicate_rows": "0",
+      "missing_cells": "7868",
+      "issues": [
+        "Found 7868 missing values"
+      ]
+    },
+    "loads": {
+      "completeness_score": 100.0,
+      "duplicate_rows": "0",
+      "missing_cells": "0",
+      "issues": []
+    },
+    "maintenance_records": {
+      "completeness_score": 100.0,
+      "duplicate_rows": "0",
+      "missing_cells": "0",
+      "issues": []
+    },
+    "routes": {
+      "completeness_score": 100.0,
+      "duplicate_rows": "0",
+      "missing_cells": "0",
+      "issues": []
+    },
+    "safety_incidents": {
+      "completeness_score": 99.92156862745098,
+      "duplicate_rows": "0",
+      "missing_cells": "2",
+      "issues": [
+        "Found 2 missing values"
+      ]
+    },
+    "trailers": {
+      "completeness_score": 100.0,
+      "duplicate_rows": "0",
+      "missing_cells": "0",
+      "issues": []
+    },
+    "trips": {
+      "completeness_score": 99.50571751941615,
+      "duplicate_rows": "0",
+      "missing_cells": "5066",
+      "issues": [
+        "Found 5066 missing values"
+      ]
+    },
+    "trucks": {
+      "completeness_score": 100.0,
+      "duplicate_rows": "0",
+      "missing_cells": "0",
+      "issues": []
+    },
+    "truck_utilization_metrics": {
+      "completeness_score": 100.0,
+      "duplicate_rows": "0",
+      "missing_cells": "0",
+      "issues": []
+    }
+  },
+  "issues_found": [
+    "drivers: Low completeness (93.1%)"
+  ]
+}

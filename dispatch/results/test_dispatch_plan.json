@@ -1,0 +1,14 @@
+{
+  "dispatch_id": "DISP-20260603114215",
+  "timestamp": "2026-06-03T11:42:15.490414",
+  "shipment_details": {
+    "source": "Pune",
+    "destination": "Mumbai",
+    "weight_lbs": 1200,
+    "weight_kg": 544.31,
+    "priority": "high",
+    "delivery_date": "2026-06-05"
+  },
+  "truck_assignment": {
+    "truck_id": "TRK00001",
+    "truck_capacity_lbs": 

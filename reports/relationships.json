@@ -1,0 +1,90 @@
+{
+  "loads": {
+    "customer_id": {
+      "references": "customers",
+      "foreign_key": "customer_id"
+    },
+    "route_id": {
+      "references": "routes",
+      "foreign_key": "route_id"
+    }
+  },
+  "trips": {
+    "load_id": {
+      "references": "loads",
+      "foreign_key": "load_id"
+    },
+    "driver_id": {
+      "references": "drivers",
+      "foreign_key": "driver_id"
+    },
+    "truck_id": {
+      "references": "trucks",
+      "foreign_key": "truck_id"
+    },
+    "trailer_id": {
+      "references": "trailers",
+      "foreign_key": "trailer_id"
+    }
+  },
+  "fuel_purchases": {
+    "trip_id": {
+      "references": "trips",
+      "foreign_key": "trip_id"
+    },
+    "truck_id": {
+      "references": "trucks",
+      "foreign_key": "truck_id"
+    },
+    "driver_id": {
+      "references": "drivers",
+      "foreign_key": "driver_id"
+    }
+  },
+  "maintenance_records": {
+    "truck_id": {
+      "references": "trucks",
+      "foreign_key": "truck_id"
+    }
+  },
+  "delivery_events": {
+    "load_id": {
+      "references": "loads",
+      "foreign_key": "load_id"
+    },
+    "trip_id": {
+      "references": "trips",
+      "foreign_key": "trip_id"
+    },
+    "facility_id": {
+      "references": "facilitys",
+      "foreign_key": "facility_id"
+    }
+  },
+  "safety_incidents": {
+    "trip_id": {
+      "references": "trips",
+      "foreign_key": "trip_id"
+    },
+    "truck_id": {
+      "references": "trucks",
+      "foreign_key": "truck_id"
+    },
+    "driver_id": {
+      "references": "drivers",
+      "foreign_key": "driver_id"
+    }
+  },
+  "driver_monthly_metrics": {
+    "driver_id": {
+      "references": "drivers",
+      "foreign_key": "driver_id"
+    }
+  },
+  "truck_utilization_metrics": {
+    "truck_id": {
+      "references": "trucks",
+      "foreign_key": "truck_id"
+    }
+  }
+}

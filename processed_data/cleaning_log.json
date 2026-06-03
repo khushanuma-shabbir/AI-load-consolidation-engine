@@ -1,0 +1,330 @@
+{
+  "customers": {
+    "original_shape": [
+      200,
+      8
+    ],
+    "operations": [
+      "Parsed contract_start_date as datetime",
+      "Converted customer_id to string",
+      "Stripped whitespace from customer_name",
+      "Stripped whitespace from customer_type",
+      "Stripped whitespace from primary_freight_type",
+      "Stripped whitespace from account_status"
+    ],
+    "final_shape": [
+      200,
+      8
+    ],
+    "rows_removed": 0,
+    "columns_removed": 0
+  },
+  "delivery_events": {
+    "original_shape": [
+      170820,
+      11
+    ],
+    "operations": [
+      "Parsed scheduled_datetime as datetime",
+      "Parsed actual_datetime as datetime",
+      "Parsed on_time_flag as datetime",
+      "Forward-filled 170820 missing dates in on_time_flag",
+      "Converted event_id to string",
+      "Converted load_id to string",
+      "Converted trip_id to string",
+      "Converted facility_id to string",
+      "Removed empty columns: on_time_flag",
+      "Stripped whitespace from event_type",
+      "Stripped whitespace from location_city",
+      "Stripped whitespace from location_state"
+    ],
+    "final_shape": [
+      170820,
+      10
+    ],
+    "rows_removed": 0,
+    "columns_removed": 1
+  },
+  "Delivery_Logistics": {
+    "original_shape": [
+      25000,
+      15
+    ],
+    "operations": [
+      "Parsed delivery_time_hours as datetime",
+      "Parsed expected_time_hours as datetime",
+      "Converted delivery_id to string",
+      "Stripped whitespace from delivery_partner",
+      "Stripped whitespace from package_type",
+      "Stripped whitespace from vehicle_type",
+      "Stripped whitespace from delivery_mode",
+      "Stripped whitespace from region",
+      "Stripped whitespace from weather_condition",
+      "Stripped whitespace from delayed",
+      "Stripped whitespace from delivery_status"
+    ],
+    "final_shape": [
+      25000,
+      15
+    ],
+    "rows_removed": 0,
+    "columns_removed": 0
+  },
+  "drivers": {
+    "original_shape": [
+      150,
+      12
+    ],
+    "operations": [
+      "Parsed hire_date as datetime",
+      "Parsed termination_date as datetime",
+      "Parsed date_of_birth as datetime",
+      "Forward-filled 124 missing dates in termination_date",
+      "Converted driver_id to string",
+      "Stripped whitespace from first_name",
+      "Stripped whitespace from last_name",
+      "Stripped whitespace from license_number",
+      "Stripped whitespace from license_state",
+      "Stripped whitespace from home_terminal",
+      "Stripped whitespace from employment_status",
+      "Stripped whitespace from cdl_class"
+    ],
+    "final_shape": [
+      150,
+      12
+    ],
+    "rows_removed": 0,
+    "columns_removed": 0
+  },
+  "driver_monthly_metrics": {
+    "original_shape": [
+      4464,
+      9
+    ],
+    "operations": [
+      "Parsed on_time_delivery_rate as datetime",
+      "Converted driver_id to string",
+      "Stripped whitespace from month"
+    ],
+    "final_shape": [
+      4464,
+      9
+    ],
+    "rows_removed": 0,
+    "columns_removed": 0
+  },
+  "facilities": {
+    "original_shape": [
+      50,
+      9
+    ],
+    "operations": [
+      "Converted facility_id to string",
+      "Stripped whitespace from facility_name",
+      "Stripped whitespace from facility_type",
+      "Stripped whitespace from city",
+      "Stripped whitespace from state",
+      "Stripped whitespace from operating_hours"
+    ],
+    "final_shape": [
+      50,
+      9
+    ],
+    "rows_removed": 0,
+    "columns_removed": 0
+  },
+  "fuel_purchases": {
+    "original_shape": [
+      196442,
+      11
+    ],
+    "operations": [
+      "Parsed purchase_date as datetime",
+      "Filled 3880 missing values in truck_id with mode ('TRK00044')",
+      "Filled 3988 missing values in driver_id with mode ('DRV00108')",
+      "Converted fuel_purchase_id to string",
+      "Converted trip_id to string",
+      "Converted truck_id to string",
+      "Converted driver_id to string",
+      "Stripped whitespace from location_city",
+      "Stripped whitespace from location_state",
+      "Stripped whitespace from fuel_card_number"
+    ],
+    "final_shape": [
+      196442,
+      11
+    ],
+    "rows_removed": 0,
+    "columns_removed": 0
+  },
+  "loads": {
+    "original_shape": [
+      85410,
+      12
+    ],
+    "operations": [
+      "Parsed load_date as datetime",
+      "Converted load_id to string",
+      "Converted customer_id to string",
+      "Converted route_id to string",
+      "Stripped whitespace from load_type",
+      "Stripped whitespace from load_status",
+      "Stripped whitespace from booking_type"
+    ],
+    "final_shape": [
+      85410,
+      12
+    ],
+    "rows_removed": 0,
+    "columns_removed": 0
+  },
+  "maintenance_records": {
+    "original_shape": [
+      2920,
+      12
+    ],
+    "operations": [
+      "Parsed maintenance_date as datetime",
+      "Parsed downtime_hours as datetime",
+      "Converted maintenance_id to string",
+      "Converted truck_id to string",
+      "Stripped whitespace from maintenance_type",
+      "Stripped whitespace from facility_location",
+      "Stripped whitespace from service_description"
+    ],
+    "final_shape": [
+      2920,
+      12
+    ],
+    "rows_removed": 0,
+    "columns_removed": 0
+  },
+  "routes": {
+    "original_shape": [
+      58,
+      9
+    ],
+    "operations": [
+      "Converted route_id to string",
+      "Stripped whitespace from origin_city",
+      "Stripped whitespace from origin_state",
+      "Stripped whitespace from destination_city",
+      "Stripped whitespace from destination_state"
+    ],
+    "final_shape": [
+      58,
+      9
+    ],
+    "rows_removed": 0,
+    "columns_removed": 0
+  },
+  "safety_incidents": {
+    "original_shape": [
+      170,
+      15
+    ],
+    "operations": [
+      "Parsed incident_date as datetime",
+      "Filled 1 missing values in truck_id with mode ('TRK00007')",
+      "Filled 1 missing values in driver_id with mode ('DRV00058')",
+      "Converted incident_id to string",
+      "Converted trip_id to string",
+      "Converted truck_id to string",
+      "Converted driver_id to string",
+      "Stripped whitespace from incident_type",
+      "Stripped whitespace from location_city",
+      "Stripped whitespace from location_state",
+      "Stripped whitespace from description"
+    ],
+    "final_shape": [
+      170,
+      15
+    ],
+    "rows_removed": 0,
+    "columns_removed": 0
+  },
+  "trailers": {
+    "original_shape": [
+      180,
+      9
+    ],
+    "operations": [
+      "Parsed acquisition_date as datetime",
+      "Converted trailer_id to string",
+      "Stripped whitespace from trailer_type",
+      "Stripped whitespace from vin",
+      "Stripped whitespace from status",
+      "Stripped whitespace from current_location"
+    ],
+    "final_shape": [
+      180,
+      9
+    ],
+    "rows_removed": 0,
+    "columns_removed": 0
+  },
+  "trips": {
+    "original_shape": [
+      85410,
+      12
+    ],
+    "operations": [
+      "Parsed dispatch_date as datetime",
+      "Parsed idle_time_hours as datetime",
+      "Filled 1714 missing values in driver_id with mode ('DRV00019')",
+      "Filled 1672 missing values in truck_id with mode ('TRK00055')",
+      "Filled 1680 missing values in trailer_id with mode ('TRL00104')",
+      "Converted trip_id to string",
+      "Converted load_id to string",
+      "Converted driver_id to string",
+      "Converted truck_id to string",
+      "Converted trailer_id to string",
+      "Stripped whitespace from trip_status"
+    ],
+    "final_shape": [
+      85410,
+      12
+    ],
+    "rows_removed": 0,
+    "columns_removed": 0
+  },
+  "trucks": {
+    "original_shape": [
+      120,
+      11
+    ],
+    "operations": [
+      "Parsed acquisition_date as datetime",
+      "Converted truck_id to string",
+      "Stripped whitespace from make",
+      "Stripped whitespace from vin",
+      "Stripped whitespace from fuel_type",
+      "Stripped whitespace from status",
+      "Stripped whitespace from home_terminal"
+    ],
+    "final_shape": [
+      120,
+      11
+    ],
+    "rows_removed": 0,
+    "columns_removed": 0
+  },
+  "truck_utilization_metrics": {
+    "original_shape": [
+      3312,
+      10
+    ],
+    "operations": [
+      "Parsed downtime_hours as datetime",
+      "Converted truck_id to string",
+      "Clipped 2 outliers in maintenance_cost",
+      "Stripped whitespace from month"
+    ],
+    "final_shape": [
+      3312,
+      10
+    ],
+    "rows_removed": 0,
+    "columns_removed": 0
+  }
+}

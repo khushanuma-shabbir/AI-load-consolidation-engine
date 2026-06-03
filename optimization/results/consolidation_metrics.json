@@ -1,0 +1,24 @@
+{
+  "before": {
+    "trucks_used": 120,
+    "avg_utilization": "Unknown"
+  },
+  "after": {
+    "trucks_used": 78,
+    "avg_utilization": 87.3,
+    "high_utilization_trucks": 65,
+    "medium_utilization_trucks": 11,
+    "low_utilization_trucks": 2
+  },
+  "improvement": {
+    "trucks_saved": 42,
+    "savings_percentage": 35.0,
+    "capacity_wasted_after": 127500,
+    "efficiency_gain": "35.0%"
+  },
+  "economics": {
+    "cost_per_truck": 500,
+    "cost_savings": 21000,
+    "total_revenue": 2847500
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "dispatch_id": "DISP-20260603114959",
+  "timestamp": "2026-06-03T11:49:59.622741",
+  "shipment_details": {
+    "source": "Pune",
+    "destination": "Mumbai",
+    "weight_lbs": 1200,
+    "weight_kg": 544.31,
+    "priority": "high",
+    "delivery_date": "2026-06-05"
+  },
+  "truck_assignment": {
+    "truck_id": "TRK00001",
+    "truck_capacity_lbs": 45000,
+    "current_utilization_pct": 0,
+    "new_utilization_pct": 2.67,
+    "remaining_capacity_lbs": 43800,
+    "consolidation_status": "New Allocation"
+  },
+  "route_details": {
+    "distance_km": 148,
+    "distance_miles": 91.96,
+    "travel_hours": 2.47,
+    "travel_time": "2h 28m",
+    "fuel_gallons": 15.33,
+    "fuel_cost": 53.65,
+    "driver_cost": 61.67,
+    "toll_cost": 7.4,
+    "total_cost": 122.71,
+    "emissions_kg": 156.34
+  },
+  "cost_analysis": {
+    "fuel_cost": 53.65,
+    "driver_cost": 61.67,
+    "toll_cost": 7.4,
+    "total_cost": 122.71,
+    "cost_savings": 0,
+    "final_cost": 122.71
+  },
+  "environmental_impact": {
+    "emissions_kg": 156.34,
+    "emissions_tons": 0.156
+  },
+  "optimization_score": 2.67,
+  "recommendations": [
+    "\u2192 New truck allocation required",
+    "\u26a0 Low utilization (2.7%) - consider combining with other shipments"
+  ]
+}

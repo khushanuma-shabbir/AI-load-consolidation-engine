@@ -1,0 +1,1917 @@
+{
+  "customers": {
+    "name": "customers",
+    "rows": 200,
+    "columns": 8,
+    "memory_usage_mb": 0.07947635650634766,
+    "column_details": {
+      "customer_id": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 200,
+        "unique_pct": 100.0
+      },
+      "customer_name": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 107,
+        "unique_pct": 53.5
+      },
+      "customer_type": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 3,
+        "unique_pct": 1.5
+      },
+      "credit_terms_days": {
+        "dtype": "int64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 4,
+        "unique_pct": 2.0,
+        "min": "15",
+        "max": "60",
+        "mean": 37.65,
+        "median": 30.0,
+        "std": 17.078815229641698,
+        "zeros": "0",
+        "negatives": "0"
+      },
+      "primary_freight_type": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 6,
+        "unique_pct": 3.0
+      },
+      "account_status": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 2,
+        "unique_pct": 1.0
+      },
+      "contract_start_date": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 173,
+        "unique_pct": 86.5
+      },
+      "annual_revenue_potential": {
+        "dtype": "int64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 200,
+        "unique_pct": 100.0,
+        "min": "101641",
+        "max": "4990599",
+        "mean": 2688236.745,
+        "median": 2784584.5,
+        "std": 1454956.5012565267,
+        "zeros": "0",
+        "negatives": "0"
+      }
+    },
+    "missing_data": {},
+    "duplicates": "0",
+    "numeric_summary": {},
+    "categorical_summary": {},
+    "potential_keys": [
+      "customer_id",
+      "annual_revenue_potential"
+    ],
+    "date_columns": [
+      "contract_start_date"
+    ]
+  },
+  "delivery_events": {
+    "name": "delivery_events",
+    "rows": 170820,
+    "columns": 11,
+    "memory_usage_mb": 103.35959720611572,
+    "column_details": {
+      "event_id": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 170820,
+        "unique_pct": 100.0
+      },
+      "load_id": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 85410,
+        "unique_pct": 50.0
+      },
+      "trip_id": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 85410,
+        "unique_pct": 50.0
+      },
+      "event_type": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 2,
+        "unique_pct": 0.001170823088631308
+      },
+      "facility_id": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 50,
+        "unique_pct": 0.029270577215782696
+      },
+      "scheduled_datetime": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 99624,
+        "unique_pct": 58.32103969090271
+      },
+      "actual_datetime": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 170820,
+        "unique_pct": 100.0
+      },
+      "detention_minutes": {
+        "dtype": "int64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 240,
+        "unique_pct": 0.14049877063575694,
+        "min": "0",
+        "max": "239",
+        "mean": 91.53746048472075,
+        "median": 88.0,
+        "std": 68.65251449514217,
+        "zeros": "22472",
+        "negatives": "0"
+      },
+      "on_time_flag": {
+        "dtype": "bool",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 2,
+        "unique_pct": 0.001170823088631308,
+        "min": "False",
+        "max": "True",
+        "mean": 0.556697108066971,
+        "median": 1.0,
+        "std": 0.49677649164965837,
+        "zeros": "75725",
+        "negatives": "0"
+      },
+      "location_city": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 20,
+        "unique_pct": 0.011708230886313079
+      },
+      "location_state": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 19,
+        "unique_pct": 0.011122819341997424
+      }
+    },
+    "missing_data": {},
+    "duplicates": "0",
+    "numeric_summary": {},
+    "categorical_summary": {},
+    "potential_keys": [
+      "event_id",
+      "actual_datetime"
+    ],
+    "date_columns": [
+      "scheduled_datetime",
+      "actual_datetime",
+      "on_time_flag"
+    ]
+  },
+  "Delivery_Logistics": {
+    "name": "Delivery_Logistics",
+    "rows": 25000,
+    "columns": 15,
+    "memory_usage_mb": 17.16756534576416,
+    "column_details": {
+      "delivery_id": {
+        "dtype": "float64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 24502,
+        "unique_pct": 98.008,
+        "min": 250.99,
+        "max": 24750.01,
+        "mean": 12500.5,
+        "median": 12500.5,
+        "std": 7212.73231376981,
+        "zeros": "0",
+        "negatives": "0"
+      },
+      "delivery_partner": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 9,
+        "unique_pct": 0.036000000000000004
+      },
+      "package_type": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 9,
+        "unique_pct": 0.036000000000000004
+      },
+      "vehicle_type": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 6,
+        "unique_pct": 0.024
+      },
+      "delivery_mode": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 4,
+        "unique_pct": 0.016
+      },
+      "region": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 5,
+        "unique_pct": 0.02
+      },
+      "weather_condition": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 6,
+        "unique_pct": 0.024
+      },
+      "distance_km": {
+        "dtype": "float64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 2935,
+        "unique_pct": 11.74,
+        "min": 3.6,
+        "max": 297.1,
+        "mean": 150.390436,
+        "median": 151.0,
+        "std": 86.40974534098281,
+        "zeros": "0",
+        "negatives": "0"
+      },
+      "package_weight_kg": {
+        "dtype": "float64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 4853,
+        "unique_pct": 19.412,
+        "min": 0.67,
+        "max": 49.52,
+        "mean": 25.145897599999998,
+        "median": 25.145,
+        "std": 14.368662980157469,
+        "zeros": "0",
+        "negatives": "0"
+      },
+      "delivery_time_hours": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 20,
+        "unique_pct": 0.08
+      },
+      "expected_time_hours": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 9,
+        "unique_pct": 0.036000000000000004
+      },
+      "delayed": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 2,
+        "unique_pct": 0.008
+      },
+      "delivery_status": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 3,
+        "unique_pct": 0.012
+      },
+      "delivery_rating": {
+        "dtype": "int64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 5,
+        "unique_pct": 0.02,
+        "min": "1",
+        "max": "5",
+        "mean": 3.666,
+        "median": 4.0,
+        "std": 1.14996386755231,
+        "zeros": "0",
+        "negatives": "0"
+      },
+      "delivery_cost": {
+        "dtype": "float64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 22670,
+        "unique_pct": 90.68,
+        "min": 95.6674,
+        "max": 1632.7206,
+        "mean": 864.9445787999999,
+        "median": 867.5350000000001,
+        "std": 435.71259319097993,
+        "zeros": "0",
+        "negatives": "0"
+      }
+    },
+    "missing_data": {},
+    "duplicates": "0",
+    "numeric_summary": {},
+    "categorical_summary": {},
+    "potential_keys": [],
+    "date_columns": [
+      "delivery_time_hours",
+      "expected_time_hours"
+    ]
+  },
+  "drivers": {
+    "name": "drivers",
+    "rows": 150,
+    "columns": 12,
+    "memory_usage_mb": 0.09830284118652344,
+    "column_details": {
+      "driver_id": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 150,
+        "unique_pct": 100.0
+      },
+      "first_name": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 20,
+        "unique_pct": 13.333333333333334
+      },
+      "last_name": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 20,
+        "unique_pct": 13.333333333333334
+      },
+      "hire_date": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 147,
+        "unique_pct": 98.0
+      },
+      "termination_date": {
+        "dtype": "str",
+        "missing_count": "124",
+        "missing_pct": 82.66666666666667,
+        "unique_count": 26,
+        "unique_pct": 17.333333333333336
+      },
+      "license_number": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 150,
+        "unique_pct": 100.0
+      },
+      "license_state": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 23,
+        "unique_pct": 15.333333333333332
+      },
+      "date_of_birth": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 148,
+        "unique_pct": 98.66666666666667
+      },
+      "home_terminal": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 25,
+        "unique_pct": 16.666666666666664
+      },
+      "employment_status": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 2,
+        "unique_pct": 1.3333333333333335
+      },
+      "cdl_class": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 1,
+        "unique_pct": 0.6666666666666667
+      },
+      "years_experience": {
+        "dtype": "int64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 24,
+        "unique_pct": 16.0,
+        "min": "2",
+        "max": "25",
+        "mean": 13.493333333333334,
+        "median": 13.5,
+        "std": 6.958888543001317,
+        "zeros": "0",
+        "negatives": "0"
+      }
+    },
+    "missing_data": {
+      "termination_date": {
+        "count": "124",
+        "percentage": 82.66666666666667
+      }
+    },
+    "duplicates": "0",
+    "numeric_summary": {},
+    "categorical_summary": {},
+    "potential_keys": [
+      "driver_id",
+      "license_number"
+    ],
+    "date_columns": [
+      "hire_date",
+      "termination_date",
+      "date_of_birth"
+    ]
+  },
+  "driver_monthly_metrics": {
+    "name": "driver_monthly_metrics",
+    "rows": 4464,
+    "columns": 9,
+    "memory_usage_mb": 0.8004798889160156,
+    "column_details": {
+      "driver_id": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 124,
+        "unique_pct": 2.7777777777777777
+      },
+      "month": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 36,
+        "unique_pct": 0.8064516129032258
+      },
+      "trips_completed": {
+        "dtype": "int64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 32,
+        "unique_pct": 0.7168458781362007,
+        "min": "5",
+        "max": "37",
+        "mean": 18.74910394265233,
+        "median": 19.0,
+        "std": 4.387079914994097,
+        "zeros": "0",
+        "negatives": "0"
+      },
+      "total_miles": {
+        "dtype": "int64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 4100,
+        "unique_pct": 91.84587813620072,
+        "min": "3310",
+        "max": "57954",
+        "mean": 26812.792338709678,
+        "median": 26409.5,
+        "std": 7253.534264705887,
+        "zeros": "0",
+        "negatives": "0"
+      },
+      "total_revenue": {
+        "dtype": "float64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 4463,
+        "unique_pct": 99.97759856630825,
+        "min": 7096.56,
+        "max": 124579.53,
+        "mean": 57630.94771281362,
+        "median": 56652.715,
+        "std": 15899.349196051613,
+        "zeros": "0",
+        "negatives": "0"
+      },
+      "average_mpg": {
+        "dtype": "float64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 97,
+        "unique_pct": 2.1729390681003586,
+        "min": 6.01,
+        "max": 7.07,
+        "mean": 6.501861559139784,
+        "median": 6.5,
+        "std": 0.14035296120148527,
+        "zeros": "0",
+        "negatives": "0"
+      },
+      "total_fuel_gallons": {
+        "dtype": "float64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 4201,
+        "unique_pct": 94.1084229390681,
+        "min": 521.9,
+        "max": 9007.5,
+        "mean": 4158.631698028675,
+        "median": 4083.95,
+        "std": 1132.037703973956,
+        "zeros": "0",
+        "negatives": "0"
+      },
+      "on_time_delivery_rate": {
+        "dtype": "float64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 187,
+        "unique_pct": 4.189068100358423,
+        "min": 0.0,
+        "max": 0.833,
+        "mean": 0.4459957437275986,
+        "median": 0.444,
+        "std": 0.11998795678525438,
+        "zeros": "1",
+        "negatives": "0"
+      },
+      "average_idle_hours": {
+        "dtype": "float64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 51,
+        "unique_pct": 1.14247311827957,
+        "min": 4.4,
+        "max": 9.7,
+        "mean": 7.01173835125448,
+        "median": 7.0,
+        "std": 0.6832565767840324,
+        "zeros": "0",
+        "negatives": "0"
+      }
+    },
+    "missing_data": {},
+    "duplicates": "0",
+    "numeric_summary": {},
+    "categorical_summary": {},
+    "potential_keys": [],
+    "date_columns": [
+      "on_time_delivery_rate"
+    ]
+  },
+  "facilities": {
+    "name": "facilities",
+    "rows": 50,
+    "columns": 9,
+    "memory_usage_mb": 0.020354270935058594,
+    "column_details": {
+      "facility_id": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 50,
+        "unique_pct": 100.0
+      },
+      "facility_name": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 35,
+        "unique_pct": 70.0
+      },
+      "facility_type": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 4,
+        "unique_pct": 8.0
+      },
+      "city": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 21,
+        "unique_pct": 42.0
+      },
+      "state": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 20,
+        "unique_pct": 40.0
+      },
+      "latitude": {
+        "dtype": "float64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 21,
+        "unique_pct": 42.0,
+        "min": 25.7617,
+        "max": 45.5152,
+        "mean": 36.869319999999995,
+        "median": 36.1663,
+        "std": 4.880075928106205,
+        "zeros": "0",
+        "negatives": "0"
+      },
+      "longitude": {
+        "dtype": "float64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 21,
+        "unique_pct": 42.0,
+        "min": -122.6784,
+        "max": -74.006,
+        "mean": -93.260216,
+        "median": -86.7816,
+        "std": 13.74768682797753,
+        "zeros": "0",
+        "negatives": "50"
+      },
+      "dock_doors": {
+        "dtype": "int64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 40,
+        "unique_pct": 80.0,
+        "min": "16",
+        "max": "150",
+        "mean": 78.58,
+        "median": 67.5,
+        "std": 39.735395211990294,
+        "zeros": "0",
+        "negatives": "0"
+      },
+      "operating_hours": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 4,
+        "unique_pct": 8.0
+      }
+    },
+    "missing_data": {},
+    "duplicates": "0",
+    "numeric_summary": {},
+    "categorical_summary": {},
+    "potential_keys": [
+      "facility_id"
+    ],
+    "date_columns": []
+  },
+  "fuel_purchases": {
+    "name": "fuel_purchases",
+    "rows": 196442,
+    "columns": 11,
+    "memory_usage_mb": 104.21391487121582,
+    "column_details": {
+      "fuel_purchase_id": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 196442,
+        "unique_pct": 100.0
+      },
+      "trip_id": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 76939,
+        "unique_pct": 39.16626790604861
+      },
+      "truck_id": {
+        "dtype": "str",
+        "missing_count": "3880",
+        "missing_pct": 1.9751376996772585,
+        "unique_count": 92,
+        "unique_pct": 0.04683316195111025
+      },
+      "driver_id": {
+        "dtype": "str",
+        "missing_count": "3988",
+        "missing_pct": 2.0301157593589965,
+        "unique_count": 124,
+        "unique_pct": 0.063122957412366
+      },
+      "purchase_date": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 26331,
+        "unique_pct": 13.403956384072652
+      },
+      "location_city": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 25,
+        "unique_pct": 0.012726402704106047
+      },
+      "location_state": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 23,
+        "unique_pct": 0.011708290487777563
+      },
+      "gallons": {
+        "dtype": "float64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 1501,
+        "unique_pct": 0.764093218354527,
+        "min": 50.0,
+        "max": 200.0,
+        "mean": 124.81565958399935,
+        "median": 124.7,
+        "std": 43.34652184258013,
+        "zeros": "0",
+        "negatives": "0"
+      },
+      "price_per_gallon": {
+        "dtype": "float64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 1851,
+        "unique_pct": 0.9422628562120117,
+        "min": 3.15,
+        "max": 5.0,
+        "mean": 3.898418138687246,
+        "median": 3.856,
+        "std": 0.4364888305951434,
+        "zeros": "0",
+        "negatives": "0"
+      },
+      "total_cost": {
+        "dtype": "float64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 64113,
+        "unique_pct": 32.63711426273404,
+        "min": 158.5,
+        "max": 997.9,
+        "mean": 486.62196495657753,
+        "median": 480.66,
+        "std": 178.61666546597948,
+        "zeros": "0",
+        "negatives": "0"
+      },
+      "fuel_card_number": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 176645,
+        "unique_pct": 89.9222162266725
+      }
+    },
+    "missing_data": {
+      "truck_id": {
+        "count": "3880",
+        "percentage": 1.9751376996772585
+      },
+      "driver_id": {
+        "count": "3988",
+        "percentage": 2.0301157593589965
+      }
+    },
+    "duplicates": "0",
+    "numeric_summary": {},
+    "categorical_summary": {},
+    "potential_keys": [
+      "fuel_purchase_id"
+    ],
+    "date_columns": [
+      "purchase_date"
+    ]
+  },
+  "loads": {
+    "name": "loads",
+    "rows": 85410,
+    "columns": 12,
+    "memory_usage_mb": 41.05272960662842,
+    "column_details": {
+      "load_id": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 85410,
+        "unique_pct": 100.0
+      },
+      "customer_id": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 200,
+        "unique_pct": 0.23416461772626157
+      },
+      "route_id": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 58,
+        "unique_pct": 0.06790773914061585
+      },
+      "load_date": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 1096,
+        "unique_pct": 1.2832221051399133
+      },
+      "load_type": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 2,
+        "unique_pct": 0.002341646177262616
+      },
+      "weight_lbs": {
+        "dtype": "int64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 31927,
+        "unique_pct": 37.380868750731764,
+        "min": "10000",
+        "max": "45000",
+        "mean": 27477.495304999415,
+        "median": 27482.0,
+        "std": 10095.42185722768,
+        "zeros": "0",
+        "negatives": "0"
+      },
+      "pieces": {
+        "dtype": "int64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 28,
+        "unique_pct": 0.03278304648167662,
+        "min": "1",
+        "max": "28",
+        "mean": 14.47053038285915,
+        "median": 14.0,
+        "std": 8.070076706764212,
+        "zeros": "0",
+        "negatives": "0"
+      },
+      "revenue": {
+        "dtype": "float64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 79130,
+        "unique_pct": 92.64723100339539,
+        "min": 125.93,
+        "max": 8125.22,
+        "mean": 3073.7126834094365,
+        "median": 2827.9849999999997,
+        "std": 1883.1274356826661,
+        "zeros": "0",
+        "negatives": "0"
+      },
+      "fuel_surcharge": {
+        "dtype": "float64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 57,
+        "unique_pct": 0.06673691605198455,
+        "min": 13.8,
+        "max": 891.82,
+        "mean": 350.97211860437886,
+        "median": 314.64,
+        "std": 218.03468352587623,
+        "zeros": "0",
+        "negatives": "0"
+      },
+      "accessorial_charges": {
+        "dtype": "int64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 6,
+        "unique_pct": 0.007024938531787847,
+        "min": "0",
+        "max": "200",
+        "mean": 71.64383561643835,
+        "median": 50.0,
+        "std": 70.01882331049,
+        "zeros": "32186",
+        "negatives": "0"
+      },
+      "load_status": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 1,
+        "unique_pct": 0.001170823088631308
+      },
+      "booking_type": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 3,
+        "unique_pct": 0.0035124692658939235
+      }
+    },
+    "missing_data": {},
+    "duplicates": "0",
+    "numeric_summary": {},
+    "categorical_summary": {},
+    "potential_keys": [
+      "load_id"
+    ],
+    "date_columns": [
+      "load_date"
+    ]
+  },
+  "maintenance_records": {
+    "name": "maintenance_records",
+    "rows": 2920,
+    "columns": 12,
+    "memory_usage_mb": 1.2647838592529297,
+    "column_details": {
+      "maintenance_id": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 2920,
+        "unique_pct": 100.0
+      },
+      "truck_id": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 120,
+        "unique_pct": 4.10958904109589
+      },
+      "maintenance_date": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 1020,
+        "unique_pct": 34.93150684931507
+      },
+      "maintenance_type": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 7,
+        "unique_pct": 0.2397260273972603
+      },
+      "odometer_reading": {
+        "dtype": "int64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 2912,
+        "unique_pct": 99.72602739726028,
+        "min": "50156",
+        "max": "749875",
+        "mean": 401534.7876712329,
+        "median": 407955.0,
+        "std": 207093.95166485818,
+        "zeros": "0",
+        "negatives": "0"
+      },
+      "labor_hours": {
+        "dtype": "float64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 76,
+        "unique_pct": 2.6027397260273974,
+        "min": 0.5,
+        "max": 8.0,
+        "mean": 4.178458904109589,
+        "median": 4.2,
+        "std": 2.131281805065467,
+        "zeros": "0",
+        "negatives": "0"
+      },
+      "labor_cost": {
+        "dtype": "float64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 2851,
+        "unique_pct": 97.63698630136986,
+        "min": 43.28,
+        "max": 976.87,
+        "mean": 438.5298253424657,
+        "median": 435.2,
+        "std": 229.98962137240878,
+        "zeros": "0",
+        "negatives": "0"
+      },
+      "parts_cost": {
+        "dtype": "float64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 2903,
+        "unique_pct": 99.41780821917808,
+        "min": 0.14,
+        "max": 3498.61,
+        "mean": 1523.995270547945,
+        "median": 1465.415,
+        "std": 1103.739471266033,
+        "zeros": "0",
+        "negatives": "0"
+      },
+      "total_cost": {
+        "dtype": "float64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 2914,
+        "unique_pct": 99.79452054794521,
+        "min": 60.82,
+        "max": 4426.57,
+        "mean": 1962.525095890411,
+        "median": 1896.045,
+        "std": 1135.418952330216,
+        "zeros": "0",
+        "negatives": "0"
+      },
+      "facility_location": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 25,
+        "unique_pct": 0.8561643835616438
+      },
+      "downtime_hours": {
+        "dtype": "float64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 460,
+        "unique_pct": 15.753424657534246,
+        "min": 2.0,
+        "max": 48.0,
+        "mean": 24.736472602739727,
+        "median": 24.75,
+        "std": 13.312263401005943,
+        "zeros": "0",
+        "negatives": "0"
+      },
+      "service_description": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 21,
+        "unique_pct": 0.7191780821917808
+      }
+    },
+    "missing_data": {},
+    "duplicates": "0",
+    "numeric_summary": {},
+    "categorical_summary": {},
+    "potential_keys": [
+      "maintenance_id"
+    ],
+    "date_columns": [
+      "maintenance_date",
+      "downtime_hours"
+    ]
+  },
+  "routes": {
+    "name": "routes",
+    "rows": 58,
+    "columns": 9,
+    "memory_usage_mb": 0.019260406494140625,
+    "column_details": {
+      "route_id": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 58,
+        "unique_pct": 100.0
+      },
+      "origin_city": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 18,
+        "unique_pct": 31.03448275862069
+      },
+      "origin_state": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 17,
+        "unique_pct": 29.310344827586203
+      },
+      "destination_city": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 19,
+        "unique_pct": 32.758620689655174
+      },
+      "destination_state": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 18,
+        "unique_pct": 31.03448275862069
+      },
+      "typical_distance_miles": {
+        "dtype": "int64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 52,
+        "unique_pct": 89.65517241379311,
+        "min": "92",
+        "max": "3141",
+        "mean": 1391.5,
+        "median": 1271.0,
+        "std": 782.8332091405764,
+        "zeros": "0",
+        "negatives": "0"
+      },
+      "base_rate_per_mile": {
+        "dtype": "float64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 46,
+        "unique_pct": 79.3103448275862,
+        "min": 1.52,
+        "max": 2.79,
+        "mean": 2.1967241379310343,
+        "median": 2.23,
+        "std": 0.3687883809631946,
+        "zeros": "0",
+        "negatives": "0"
+      },
+      "fuel_surcharge_rate": {
+        "dtype": "float64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 20,
+        "unique_pct": 34.48275862068966,
+        "min": 0.15,
+        "max": 0.34,
+        "mean": 0.24879310344827588,
+        "median": 0.245,
+        "std": 0.061816865529431754,
+        "zeros": "0",
+        "negatives": "0"
+      },
+      "typical_transit_days": {
+        "dtype": "int64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 5,
+        "unique_pct": 8.620689655172415,
+        "min": "1",
+        "max": "5",
+        "mean": 2.1206896551724137,
+        "median": 2.0,
+        "std": 1.1558787377499145,
+        "zeros": "0",
+        "negatives": "0"
+      }
+    },
+    "missing_data": {},
+    "duplicates": "0",
+    "numeric_summary": {},
+    "categorical_summary": {},
+    "potential_keys": [
+      "route_id"
+    ],
+    "date_columns": []
+  },
+  "safety_incidents": {
+    "name": "safety_incidents",
+    "rows": 170,
+    "columns": 15,
+    "memory_usage_mb": 0.10666370391845703,
+    "column_details": {
+      "incident_id": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 170,
+        "unique_pct": 100.0
+      },
+      "trip_id": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 170,
+        "unique_pct": 100.0
+      },
+      "truck_id": {
+        "dtype": "str",
+        "missing_count": "1",
+        "missing_pct": 0.5882352941176471,
+        "unique_count": 80,
+        "unique_pct": 47.05882352941176
+      },
+      "driver_id": {
+        "dtype": "str",
+        "missing_count": "1",
+        "missing_pct": 0.5882352941176471,
+        "unique_count": 92,
+        "unique_pct": 54.11764705882353
+      },
+      "incident_date": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 169,
+        "unique_pct": 99.41176470588235
+      },
+      "incident_type": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 5,
+        "unique_pct": 2.941176470588235
+      },
+      "location_city": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 25,
+        "unique_pct": 14.705882352941178
+      },
+      "location_state": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 23,
+        "unique_pct": 13.529411764705882
+      },
+      "at_fault_flag": {
+        "dtype": "bool",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 2,
+        "unique_pct": 1.1764705882352942,
+        "min": "False",
+        "max": "True",
+        "mean": 0.3176470588235294,
+        "median": 0.0,
+        "std": 0.4669367557464693,
+        "zeros": "116",
+        "negatives": "0"
+      },
+      "injury_flag": {
+        "dtype": "bool",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 2,
+        "unique_pct": 1.1764705882352942,
+        "min": "False",
+        "max": "True",
+        "mean": 0.19411764705882353,
+        "median": 0.0,
+        "std": 0.396688344777112,
+        "zeros": "137",
+        "negatives": "0"
+      },
+      "vehicle_damage_cost": {
+        "dtype": "float64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 119,
+        "unique_pct": 70.0,
+        "min": 0.0,
+        "max": 24614.16,
+        "mean": 9432.712411764705,
+        "median": 8035.265,
+        "std": 8549.031425292904,
+        "zeros": "52",
+        "negatives": "0"
+      },
+      "cargo_damage_cost": {
+        "dtype": "float64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 49,
+        "unique_pct": 28.823529411764703,
+        "min": 0.0,
+        "max": 49744.07,
+        "mean": 6174.1806470588235,
+        "median": 0.0,
+        "std": 12989.250393261269,
+        "zeros": "122",
+        "negatives": "0"
+      },
+      "claim_amount": {
+        "dtype": "float64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 132,
+        "unique_pct": 77.64705882352942,
+        "min": 0.0,
+        "max": 64245.72,
+        "mean": 15606.89305882353,
+        "median": 13627.185,
+        "std": 15082.128330732661,
+        "zeros": "39",
+        "negatives": "0"
+      },
+      "preventable_flag": {
+        "dtype": "bool",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 2,
+        "unique_pct": 1.1764705882352942,
+        "min": "False",
+        "max": "True",
+        "mean": 0.3764705882352941,
+        "median": 0.0,
+        "std": 0.48593156038515356,
+        "zeros": "106",
+        "negatives": "0"
+      },
+      "description": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 12,
+        "unique_pct": 7.0588235294117645
+      }
+    },
+    "missing_data": {
+      "truck_id": {
+        "count": "1",
+        "percentage": 0.5882352941176471
+      },
+      "driver_id": {
+        "count": "1",
+        "percentage": 0.5882352941176471
+      }
+    },
+    "duplicates": "0",
+    "numeric_summary": {},
+    "categorical_summary": {},
+    "potential_keys": [
+      "incident_id",
+      "trip_id"
+    ],
+    "date_columns": [
+      "incident_date"
+    ]
+  },
+  "trailers": {
+    "name": "trailers",
+    "rows": 180,
+    "columns": 9,
+    "memory_usage_mb": 0.07329177856445312,
+    "column_details": {
+      "trailer_id": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 180,
+        "unique_pct": 100.0
+      },
+      "trailer_number": {
+        "dtype": "int64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 176,
+        "unique_pct": 97.77777777777777,
+        "min": "1072",
+        "max": "9939",
+        "mean": 5881.677777777778,
+        "median": 6150.5,
+        "std": 2491.0742060528974,
+        "zeros": "0",
+        "negatives": "0"
+      },
+      "trailer_type": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 2,
+        "unique_pct": 1.1111111111111112
+      },
+      "length_feet": {
+        "dtype": "int64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 1,
+        "unique_pct": 0.5555555555555556,
+        "min": "53",
+        "max": "53",
+        "mean": 53.0,
+        "median": 53.0,
+        "std": 0.0,
+        "zeros": "0",
+        "negatives": "0"
+      },
+      "model_year": {
+        "dtype": "int64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 10,
+        "unique_pct": 5.555555555555555,
+        "min": "2015",
+        "max": "2024",
+        "mean": 2019.1444444444444,
+        "median": 2019.0,
+        "std": 2.9409879809613138,
+        "zeros": "0",
+        "negatives": "0"
+      },
+      "vin": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 180,
+        "unique_pct": 100.0
+      },
+      "acquisition_date": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 173,
+        "unique_pct": 96.11111111111111
+      },
+      "status": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 1,
+        "unique_pct": 0.5555555555555556
+      },
+      "current_location": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 25,
+        "unique_pct": 13.88888888888889
+      }
+    },
+    "missing_data": {},
+    "duplicates": "0",
+    "numeric_summary": {},
+    "categorical_summary": {},
+    "potential_keys": [
+      "trailer_id",
+      "vin"
+    ],
+    "date_columns": [
+      "acquisition_date"
+    ]
+  },
+  "trips": {
+    "name": "trips",
+    "rows": 85410,
+    "columns": 12,
+    "memory_usage_mb": 41.056074142456055,
+    "column_details": {
+      "trip_id": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 85410,
+        "unique_pct": 100.0
+      },
+      "load_id": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 85410,
+        "unique_pct": 100.0
+      },
+      "driver_id": {
+        "dtype": "str",
+        "missing_count": "1714",
+        "missing_pct": 2.006790773914062,
+        "unique_count": 124,
+        "unique_pct": 0.14518206299028216
+      },
+      "truck_id": {
+        "dtype": "str",
+        "missing_count": "1672",
+        "missing_pct": 1.9576162041915466,
+        "unique_count": 92,
+        "unique_pct": 0.10771572415408032
+      },
+      "trailer_id": {
+        "dtype": "str",
+        "missing_count": "1680",
+        "missing_pct": 1.966982788900597,
+        "unique_count": 180,
+        "unique_pct": 0.21074815595363539
+      },
+      "dispatch_date": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 1096,
+        "unique_pct": 1.2832221051399133
+      },
+      "actual_distance_miles": {
+        "dtype": "int64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 2818,
+        "unique_pct": 3.2993794637630254,
+        "min": "90",
+        "max": "3391",
+        "mean": 1430.2681301955274,
+        "median": 1297.5,
+        "std": 801.9319732821231,
+        "zeros": "0",
+        "negatives": "0"
+      },
+      "actual_duration_hours": {
+        "dtype": "float64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 632,
+        "unique_pct": 0.7399601920149865,
+        "min": 1.4,
+        "max": 67.8,
+        "mean": 25.01467392576982,
+        "median": 23.0,
+        "std": 14.191943511381652,
+        "zeros": "0",
+        "negatives": "0"
+      },
+      "fuel_gallons_used": {
+        "dtype": "float64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 5247,
+        "unique_pct": 6.143308746048472,
+        "min": 12.0,
+        "max": 611.9,
+        "mean": 221.82742184755884,
+        "median": 204.5,
+        "std": 126.55887356149518,
+        "zeros": "0",
+        "negatives": "0"
+      },
+      "average_mpg": {
+        "dtype": "float64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 201,
+        "unique_pct": 0.23533544081489285,
+        "min": 5.5,
+        "max": 7.5,
+        "mean": 6.5014625922023175,
+        "median": 6.5,
+        "std": 0.5780914733702159,
+        "zeros": "0",
+        "negatives": "0"
+      },
+      "idle_time_hours": {
+        "dtype": "float64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 101,
+        "unique_pct": 0.11825313195176208,
+        "min": 2.0,
+        "max": 12.0,
+        "mean": 7.010783280646295,
+        "median": 7.0,
+        "std": 2.8824878866214902,
+        "zeros": "0",
+        "negatives": "0"
+      },
+      "trip_status": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 1,
+        "unique_pct": 0.001170823088631308
+      }
+    },
+    "missing_data": {
+      "driver_id": {
+        "count": "1714",
+        "percentage": 2.006790773914062
+      },
+      "truck_id": {
+        "count": "1672",
+        "percentage": 1.9576162041915466
+      },
+      "trailer_id": {
+        "count": "1680",
+        "percentage": 1.966982788900597
+      }
+    },
+    "duplicates": "0",
+    "numeric_summary": {},
+    "categorical_summary": {},
+    "potential_keys": [
+      "trip_id",
+      "load_id"
+    ],
+    "date_columns": [
+      "dispatch_date",
+      "idle_time_hours"
+    ]
+  },
+  "trucks": {
+    "name": "trucks",
+    "rows": 120,
+    "columns": 11,
+    "memory_usage_mb": 0.056949615478515625,
+    "column_details": {
+      "truck_id": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 120,
+        "unique_pct": 100.0
+      },
+      "unit_number": {
+        "dtype": "int64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 120,
+        "unique_pct": 100.0,
+        "min": "1086",
+        "max": "9991",
+        "mean": 5568.641666666666,
+        "median": 5669.0,
+        "std": 2563.782076227181,
+        "zeros": "0",
+        "negatives": "0"
+      },
+      "make": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 6,
+        "unique_pct": 5.0
+      },
+      "model_year": {
+        "dtype": "int64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 7,
+        "unique_pct": 5.833333333333333,
+        "min": "2015",
+        "max": "2021",
+        "mean": 2015.8916666666667,
+        "median": 2015.0,
+        "std": 1.4482434061943574,
+        "zeros": "0",
+        "negatives": "0"
+      },
+      "vin": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 120,
+        "unique_pct": 100.0
+      },
+      "acquisition_date": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 119,
+        "unique_pct": 99.16666666666667
+      },
+      "acquisition_mileage": {
+        "dtype": "int64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 120,
+        "unique_pct": 100.0,
+        "min": "227",
+        "max": "49556",
+        "mean": 26058.216666666667,
+        "median": 26060.5,
+        "std": 14373.443614207847,
+        "zeros": "0",
+        "negatives": "0"
+      },
+      "fuel_type": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 1,
+        "unique_pct": 0.8333333333333334
+      },
+      "tank_capacity_gallons": {
+        "dtype": "int64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 3,
+        "unique_pct": 2.5,
+        "min": "150",
+        "max": "250",
+        "mean": 201.66666666666666,
+        "median": 200.0,
+        "std": 39.92289487266681,
+        "zeros": "0",
+        "negatives": "0"
+      },
+      "status": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 3,
+        "unique_pct": 2.5
+      },
+      "home_terminal": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 24,
+        "unique_pct": 20.0
+      }
+    },
+    "missing_data": {},
+    "duplicates": "0",
+    "numeric_summary": {},
+    "categorical_summary": {},
+    "potential_keys": [
+      "truck_id",
+      "unit_number",
+      "vin",
+      "acquisition_mileage"
+    ],
+    "date_columns": [
+      "acquisition_date"
+    ]
+  },
+  "truck_utilization_metrics": {
+    "name": "truck_utilization_metrics",
+    "rows": 3312,
+    "columns": 10,
+    "memory_usage_mb": 0.6192054748535156,
+    "column_details": {
+      "truck_id": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 92,
+        "unique_pct": 2.7777777777777777
+      },
+      "month": {
+        "dtype": "str",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 36,
+        "unique_pct": 1.0869565217391304
+      },
+      "trips_completed": {
+        "dtype": "int64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 35,
+        "unique_pct": 1.0567632850241546,
+        "min": "11",
+        "max": "46",
+        "mean": 25.283212560386474,
+        "median": 25.0,
+        "std": 5.097785764180402,
+        "zeros": "0",
+        "negatives": "0"
+      },
+      "total_miles": {
+        "dtype": "int64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 3134,
+        "unique_pct": 94.6256038647343,
+        "min": "12680",
+        "max": "71177",
+        "mean": 36152.23007246377,
+        "median": 35758.0,
+        "std": 8213.091728372112,
+        "zeros": "0",
+        "negatives": "0"
+      },
+      "total_revenue": {
+        "dtype": "float64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 3310,
+        "unique_pct": 99.93961352657004,
+        "min": 27876.18,
+        "max": 144891.1,
+        "mean": 77700.56156400967,
+        "median": 76607.69,
+        "std": 17995.26804226894,
+        "zeros": "0",
+        "negatives": "0"
+      },
+      "average_mpg": {
+        "dtype": "float64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 76,
+        "unique_pct": 2.2946859903381642,
+        "min": 6.01,
+        "max": 6.86,
+        "mean": 6.500975241545892,
+        "median": 6.5,
+        "std": 0.11571681183200566,
+        "zeros": "0",
+        "negatives": "0"
+      },
+      "maintenance_events": {
+        "dtype": "int64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 5,
+        "unique_pct": 0.15096618357487923,
+        "min": "0",
+        "max": "4",
+        "mean": 0.6733091787439613,
+        "median": 0.0,
+        "std": 0.8144942883512817,
+        "zeros": "1684",
+        "negatives": "0"
+      },
+      "maintenance_cost": {
+        "dtype": "float64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 1627,
+        "unique_pct": 49.124396135265705,
+        "min": 0.0,
+        "max": 10414.66,
+        "mean": 1307.187629830918,
+        "median": 0.0,
+        "std": 1835.021274252875,
+        "zeros": "1684",
+        "negatives": "0"
+      },
+      "downtime_hours": {
+        "dtype": "float64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 655,
+        "unique_pct": 19.77657004830918,
+        "min": 0.0,
+        "max": 152.2,
+        "mean": 16.54957729468599,
+        "median": 0.0,
+        "std": 22.997204795207065,
+        "zeros": "1684",
+        "negatives": "0"
+      },
+      "utilization_rate": {
+        "dtype": "float64",
+        "missing_count": "0",
+        "missing_pct": 0.0,
+        "unique_count": 103,
+        "unique_pct": 3.109903381642512,
+        "min": 0.387,
+        "max": 1.484,
+        "mean": 0.8304471618357487,
+        "median": 0.833,
+        "std": 0.16608412931604227,
+        "zeros": "0",
+        "negatives": "0"
+      }
+    },
+    "missing_data": {},
+    "duplicates": "0",
+    "numeric_summary": {},
+    "categorical_summary": {},
+    "potential_keys": [],
+    "date_columns": [
+      "downtime_hours"
+    ]
+  }
+}

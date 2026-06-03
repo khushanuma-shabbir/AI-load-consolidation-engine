@@ -1,0 +1,61 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Database
+  postgres:
+    image: postgres:15-alpine
+    container_name: logistics_db
+    environment:
+      POSTGRES_DB: logistics
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin123
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - logistics_network
+
+  # FastAPI Backend
+  backend:
+    build: .
+    container_name: logistics_backend
+    command: python backend/main.py
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./:/app
+      - ./processed_data:/app/processed_data
+      - ./optimization/results:/app/optimization/results
+    environment:
+      - DATABASE_URL=postgresql://admin:admin123@postgres:5432/logistics
+      - PYTHONUNBUFFERED=1
+    depends_on:
+      - postgres
+    networks:
+      - logistics_network
+
+  # Streamlit Dashboard
+  dashboard:
+    build: .
+    container_name: logistics_dashboard
+    command: streamlit run dashboard/app.py --server.port 8501 --server.address 0.0.0.0
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./:/app
+      - ./processed_data:/app/processed_data
+      - ./optimization/results:/app/optimization/results
+    environment:
+      - PYTHONUNBUFFERED=1
+    depends_on:
+      - backend
+    networks:
+      - logistics_network
+
+networks:
+  logistics_network:
+    driver: bridge
+
+volumes:
+  postgres_data:

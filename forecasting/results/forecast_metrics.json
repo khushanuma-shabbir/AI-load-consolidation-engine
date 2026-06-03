@@ -1,0 +1,10 @@
+{
+  "historical_avg_daily_shipments": 940,
+  "recent_avg_daily_shipments": 952,
+  "trend_factor": 1.013,
+  "forecast_30day_avg": 940,
+  "forecast_30day_total": 28200,
+  "forecast_90day_total": 86100,
+  "expected_revenue_30day": 2823000,
+  "expected_revenue_90day": 8614000
+}

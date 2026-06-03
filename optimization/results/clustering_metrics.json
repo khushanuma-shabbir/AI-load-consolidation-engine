@@ -1,0 +1,16 @@
+{
+  "n_clusters": 5,
+  "silhouette_score": 0.548,
+  "davies_bouldin_score": 0.892,
+  "avg_cluster_size": 17082,
+  "inertia": 46020.04,
+  "cluster_sizes": {
+    "0": 16890,
+    "1": 17234,
+    "2": 16978,
+    "3": 17102,
+    "4": 17206
+  },
+  "min_cluster_size": 16890,
+  "max_cluster_size": 17234
+}

@@ -1,0 +1,21 @@
+{
+  "num_vehicles": 10,
+  "num_destinations": 50,
+  "before": {
+    "total_distance": 458200,
+    "fuel_cost": 16037,
+    "avg_distance_per_vehicle": 45820.0
+  },
+  "after": {
+    "total_distance": 329440,
+    "fuel_cost": 11530,
+    "avg_distance_per_vehicle": 32944.0,
+    "total_revenue": 2847500
+  },
+  "savings": {
+    "distance_saved": 128760,
+    "distance_reduction_pct": 28.1,
+    "fuel_cost_saved": 4507,
+    "cost_savings_pct": 28.1
+  }
+}
