@@ -314,7 +314,6 @@ API_PORT=8000
 ```env
 # AI/ML
 GROK_API_KEY=your_key_here
-OPENAI_API_KEY=your_key_here
 
 # Optimization Parameters
 DEFAULT_TRUCK_CAPACITY=45000
